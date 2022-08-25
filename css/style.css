@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/*####### ESTILOS HEADER #############
+#####################################*/
+body{
+    margin: 0 auto;
+    width: 70%;
+    font-family: 'Roboto', sans-serif
+}
+.top, .bot{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#222222;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 0px 20px;
+}
+.nav1{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    list-style: none;
+}
+a{
+    text-decoration:none;
+    color:white;
+    font-size: 16;
+    font-weight: 300;
+}
+
+
+
+/*######## ESTILOS DEL MAIN ###############
+########################################*/
+
+
+main{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    min-height: 420px;
+    background-color: #F3F3F3;
+    margin-top:5px;
+}
+
+/* ----BOX DELIVERY------- */
+.delivery{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../img/delivery.svg);
+    background-size: cover;
+    width: 490px;
+    min-height: 350px;
+    border-radius: 5px;
+    margin-right:5px ;
+}
+.delivery h2{
+    color:red;
+    font-weight: 700;
+    font-size: 24px;
+    margin-left: 20px;
+}
+.delivery span{
+    color:white;
+}
+
+
+/*-----BOX PODIO ----*/
+
+.podio{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;     
+    align-items: center;
+    width: 490px;
+    min-height: 350px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+.podio h2{
+    font-size: 700; 
+    color: red;  
+}
+.centro{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 70px 30px 30px;
+}
+.centro img{
+    width: 90px;
+    height: 130px;
+}
+h3{
+    font-weight: 700;  
+    font-size: 20px;  
+}
+.centro li{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+
+/*############# ESTILOS AL FOOTER ################
+##################################################*/
+
+.bot{
+    min-height: 150px;
+    padding-right: 40px;
+}
+.nav2{
+    order: -1;
+    list-style: none;
+    line-height: 30px;
+    margin-left: -40px;
+}
+
+
+
+
+
+
+
