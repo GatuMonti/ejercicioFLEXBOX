@@ -1,39 +1,42 @@
 *{
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-/*####### ESTILOS HEADER #############
-#####################################*/
 body{
     margin: 0 auto;
-    width: 70%;
-    font-family: 'Roboto', sans-serif
+    width: 100vw;
+    height: auto;
+    
 }
-.top, .bot{
+
+.bot, .top{
     display: flex;
-    flex-wrap: wrap;
-    background-color:#222222;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    min-height: 100px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding: 0px 20px;
+    background-color: #222222;
+    width: 100%;
+    min-width: 200px;
+    height: 100%;    
+    padding: 0.5rem;
+}
+
+.logo{
+    width: 35%;
+    height: 50%;
 }
 .nav1{
-    display: flex;
-    width: 300px;
-    justify-content: space-around;
-    list-style: none;
+    display: none;
+    width: 50%;
+    height: auto;
 }
-a{
-    text-decoration:none;
+
+i{
+    font-size: .75rem;    
     color:white;
-    font-size: 16;
-    font-weight: 300;
 }
-
-
 
 /*######## ESTILOS DEL MAIN ###############
 ########################################*/
@@ -42,29 +45,30 @@ a{
 main{
     display:flex;
     flex-wrap: wrap;
+    width: 100%;
+    height: auto;
     justify-content: center;
-    align-items:center;
-    min-height: 420px;
     background-color: #F3F3F3;
-    margin-top:5px;
+    padding:1rem;
 }
 
 /* ----BOX DELIVERY------- */
 .delivery{
-    display: flex;
-    flex-wrap: wrap;
+    display: flex;    
     background-image: url(../img/delivery.svg);
-    background-size: cover;
-    width: 490px;
-    min-height: 350px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    min-width: 250px;
+    min-height: 200px;
     border-radius: 5px;
-    margin-right:5px ;
 }
+
 .delivery h2{
     color:red;
     font-weight: 700;
-    font-size: 24px;
-    margin-left: 20px;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
 }
 .delivery span{
     color:white;
@@ -75,39 +79,42 @@ main{
 
 .podio{
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-around;     
     align-items: center;
-    width: 490px;
-    min-height: 350px;
+    width: 50%;
+    height: auto;
+    min-width: 250px;
+    max-height: 250px;
     background-color: #FFFFFF;
     border-radius: 5px;
+    margin-top: 1rem;
 }
 .podio h2{
     font-size: 700; 
-    color: red;  
+    color: red; 
+    width: 100%; 
 }
 .centro{
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 0px 70px 30px 30px;
 }
 .centro img{
-    width: 90px;
-    height: 130px;
+    width: 50%;
+    height: 60%;
 }
 h3{
     font-weight: 700;  
-    font-size: 20px;  
+    font-size: 1.5rem;  
 }
 .centro li{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
-    line-height: 26px;
 }
 
 
@@ -117,17 +124,64 @@ h3{
 .bot{
     min-height: 150px;
     padding-right: 40px;
+    height: auto;
+}
+
+.pbot{
+    color:#F3F3F3;
+    text-align: right;
+    flex: 0.8;
 }
 .nav2{
+    display: none;
     order: -1;
     list-style: none;
     line-height: 30px;
-    margin-left: -40px;
+    margin-left: 40px;
 }
 
 
+@media (min-width: 500px){
+    .logo {
+        width: 200px;
+        height: 100px;
+    }
+    .nav1{
+        display: unset;
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+    }
+    .nav1 a{
+        text-decoration: none;
+        color:#F3F3F3;
+        margin-left: 1rem;
+        
+    }
+    .top i{
+        display: none;
+        font-size: .75rem;    
+        color:white;
+    }
 
+    main{
+        flex-wrap: nowrap;
+        align-items: center;
+        
+    }
 
+    .delivery{
+        background-size: cover;  
+        background-position: 100%;
+        height: 300px; 
+        width: 40%;
+    }
 
+    .podio{
+        width: 40%;
+        height: 300px;
+        margin-top: 0rem;
+    }
+}
 
 
